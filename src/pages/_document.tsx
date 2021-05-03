@@ -8,7 +8,6 @@ import Document, {
   NextScript
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-// import Head from 'next/head'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -43,6 +42,11 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&family=Rajdhani:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             rel="stylesheet"
