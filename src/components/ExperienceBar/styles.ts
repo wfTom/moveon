@@ -12,7 +12,7 @@ export const ExperienceBarContainer = styled.header`
     flex: 1;
     height: 4px;
     border-radius: 4px;
-    background: var(---gray-line);
+    background: var(--gray-line);
     margin: 0 1.5rem;
     position: relative;
   }

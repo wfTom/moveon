@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const HomePage = styled.div`
+export const HomePage = styled.div`
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
@@ -8,4 +8,12 @@ const HomePage = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.25rem;
+    align-content: center;
+  }
 `;
