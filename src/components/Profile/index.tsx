@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
 import { ProfileContainer } from './styles';
 
 export function Profile() {
+  const { level } = useContext(ChallengesContext);
+
   return (
     <ProfileContainer>
       <img
@@ -12,7 +15,7 @@ export function Profile() {
         <strong>Tom</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level 1
+          Level {level}
         </p>
       </div>
     </ProfileContainer>

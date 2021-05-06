@@ -14,8 +14,8 @@ export function ExperienceBar() {
     <ExperienceBarContainer>
       <span>0 xp</span>
       <div>
-        <div style={{ width: `${percentToNextLevel}` }} />
-        <span style={{ left: `${percentToNextLevel}` }}>
+        <div style={{ width: `${percentToNextLevel}%` }} />
+        <span style={{ left: `${percentToNextLevel}%` }}>
           {currentExperience} px
         </span>
       </div>

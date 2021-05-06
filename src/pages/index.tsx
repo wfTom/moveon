@@ -6,6 +6,7 @@ import { HomePage } from '../styles';
 import { CompleteChallenges } from '../components/CompleteChallenges';
 import { CountDown } from '../components/CountDown';
 import { ChallengeBox } from '../components/ChallengeBox';
+import { CountDownProvider } from '../contexts/CountDownContext';
 
 export default function Home() {
   return (
@@ -16,16 +17,18 @@ export default function Home() {
 
       <ExperienceBar />
 
-      <section>
-        <div>
-          <Profile />
-          <CompleteChallenges />
-          <CountDown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountDownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompleteChallenges />
+            <CountDown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountDownProvider>
     </HomePage>
   );
 }
