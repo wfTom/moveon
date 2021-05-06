@@ -52,7 +52,23 @@ export const CountDownButton = styled.button`
   font-weight: 600;
   transition: background-color 0.2s;
 
-  :hover {
+  :not(:disabled):hover {
     background: var(--blue-dark);
+  }
+
+  :disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
+  }
+`;
+
+export const CountDownButtonActive = styled(CountDownButton)`
+  background: var(--white);
+  color: var(--title);
+
+  :not(:disabled):hover {
+    background: var(--red);
+    color: var(--white);
   }
 `;

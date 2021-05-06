@@ -5,6 +5,7 @@ import { Profile } from '../components/Profile';
 import { HomePage } from '../styles';
 import { CompleteChallenges } from '../components/CompleteChallenges';
 import { CountDown } from '../components/CountDown';
+import { ChallengeBox } from '../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
           <CompleteChallenges />
           <CountDown />
         </div>
-        <div></div>
+        <div>
+          <ChallengeBox />
+        </div>
       </section>
     </HomePage>
   );
