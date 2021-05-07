@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 100%;
   background: var(--white);
   border-radius: 5px;
-  /* box-shadow: 0 0 60px rgba(0, 0, 0, 05); */
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
   padding: 1.5rem 2rem;
   display: flex;
   flex-direction: column;
