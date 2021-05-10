@@ -9,7 +9,7 @@
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recomend",
-    "prettier:@typescript-eslint",
+    "prettier/@typescript-eslint",
     "prettier/airbnb",
     "prettier/react"
   ],
@@ -21,11 +21,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "space-before-function-paren": "off",
