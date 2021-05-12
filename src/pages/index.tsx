@@ -42,6 +42,23 @@ export default function Home(props: HomeProps) {
             </div>
           </section>
         </CountDownProvider>
+
+        <div style={{ marginTop: '250px' }}>
+          <p>
+            O MoveOn é uma ferramenta que mescla gerenciamento de tempo através
+            da técnica de pomodoro com a prática de exercícios.
+          </p>
+          <p>
+            A técnica de pomodoro consiste em divertir o tempo em períodos de 25
+            minutes de esforço e intervalos o que auxilia em um melhor foco.
+          </p>
+          <p>
+            E nesses intervalos sugerimos colocar a prática de leves atividades
+            físicas como alongamentos e exercícios para os olhos, o que auxilia
+            muito aquelas pessoas que passam vários períodos no computador e não
+            praticam atividade física.
+          </p>
+        </div>
       </HomePage>
     </ChallengesProvider>
   );

@@ -15,5 +15,6 @@ export const HomePage = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content: center;
+    margin-top: 1.4rem;
   }
 `;
